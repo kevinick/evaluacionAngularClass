@@ -1,0 +1,19 @@
+<div *ngIf='todo'>
+    <p>mensajes works!</p>
+    <div *ngIf='btn2'>
+        <button (click)='getQuote()'>mensaje</button>
+    </div>
+
+    <p *ngIf='btn1' appDirColor>{{information}}</p>
+
+    <button (click)=ocultarbtn1()>ocultar mensaje</button>
+    <button (click)=ocultarbtn2()>ocultar boton </button>
+
+
+    <div *ngIf='image'>
+        <img src="/assets/imagenes/thesea.jpg" alt="Imagen de Yenny Yu">
+    </div>
+    <button (click)=ocultarimg()>ocultar imagen</button>
+</div>
+
+<button (click)=ocultartodo()>ocultar todo </button>
