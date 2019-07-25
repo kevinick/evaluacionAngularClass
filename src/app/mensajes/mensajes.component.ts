@@ -27,6 +27,7 @@ export class MensajesComponent implements OnInit {
     return this.quote.getQuotes()
       .subscribe(data => {
         this.information=data.quote;
+        console.log(data.quote + 'My name is Kevil' + data.quote);
       });
   }
   ocultarbtn1(){
